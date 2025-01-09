@@ -868,6 +868,14 @@ ol {
 	bottom: 20px;
 }
 
+.featured__item:hover .featured__item__pic{
+	background-size: 110%;
+}
+
+.featured__item:hover h6 a{
+	color: #4b79ea;
+}
+
 .featured__item__pic {
 	height: 270px;
 	position: relative;

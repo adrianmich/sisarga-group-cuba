@@ -41,7 +41,7 @@
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li class="active"><a href="./index.html">Inicio</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
+                <li><a href="./distributors.html">Distribuidores</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -61,7 +61,7 @@
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="./index.html">Inicio</a></li>
-                            <li><a href="./contact.html">Contacto</a></li>
+                            <li><a href="./distributors.html">Distribuidores</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -86,10 +86,10 @@
                             </form>
                         </div>
                     </div> -->
-                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+                    <div class="hero__item set-bg" data-setbg="img/hero/banner_1.webp">
                         <div class="hero__text">
                             <span>SISARGA PAR FOOD</span>
-                            <h2>Calidad <br />que cruza fronteras</h2>
+                            <h2 >Calidad <br />que cruza fronteras</h2>
                             <p>Importamos lo mejor para alimentar el futuro de Cuba.</p>
                             <!-- <a href="#" class="primary-btn">SHOP NOW</a> -->
                         </div>
@@ -281,10 +281,10 @@
                     <div class="footer__widget">
                         <h6>Links Utiles</h6>
                         <ul>
-                            <li><a href="#">Sobre Nosotros</a></li>
+                            <li><a href="https://www.sisarga.com/es">Sobre Nosotros</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">Contacto</a></li>
+                            <li><a href="distributors.html">Distribuidores</a></li>
                         </ul>
                     </div>
                 </div>
@@ -316,16 +316,76 @@
 
     <script>
         const productos = [
-            { id: 1, categoria: "azucar", imagen: "img/product/azucar-blanco-1kg.jpg", nombre: "Azúcar Blanco", peso: 1000, precio: "$3.00" },
-            { id: 2, categoria: "legumbres", imagen: "img/product/lenteja-1kg.png", nombre: "Lenteja", peso: 1000, precio: "$2.30" },
-            { id: 3, categoria: "legumbres", imagen: "img/product/frijol-colorado-1kg.png", nombre: "Frijol Colorado", peso: 1000, precio: "$2.00" },
-            { id: 4, categoria: "legumbres", imagen: "img/product/frijol-negro-1kg.png", nombre: "Frijol Negro", peso: 1000, precio: "$2.20" },
-            { id: 5, categoria: "legumbres", imagen: "img/product/frijol-bayo-1kg.png", nombre: "Frijol Bayo", peso: 1000, precio: "$2.50" },
-            { id: 6, categoria: "legumbres", imagen: "img/product/garbanzo-1kg.png", nombre: "Garbanzo", peso: 1000, precio: "$2.00" },
-            { id: 7, categoria: "arroz", imagen: "img/product/arroz-1kg.png", nombre: "Arroz", peso: 1000, precio: "$1.80" },
-            { id: 8, categoria: "cafe", imagen: "img/product/cafe-gloria-500gr.png", nombre: "Café Gloria", peso: 500, precio: "$1.00" },
-            { id: 9, categoria: "cafe", imagen: "img/product/cafe-gloria-250gr.png", nombre: "Café Gloria", peso: 250, precio: "$0.80" },
-            { id: 10, categoria: "cafe", imagen: "img/product/cafe-con-leche-1kg.png", nombre: "Café con Leche", peso: 1000, precio: "$3.00" }
+            {
+                id: 1, categoria: "azucar", imagen: "img/product/azucar-blanco-1kg.jpg", nombre: "Azúcar Blanco", peso: 1000, precio: "$3.00",
+                descripcionBreve: "Azúcar refinado de alta pureza, ideal para endulzar todo tipo de alimentos y bebidas con un sabor dulce clásico.",
+                descripcionDetallada: "El azúcar blanco refinado es un producto de calidad superior utilizado comúnmente en la repostería y cocina. Su textura fina permite una disolución rápida en líquidos calientes y fríos. Perfecto para endulzar café, té, jugos, y preparar postres como pasteles, galletas, y confituras.",
+                disponibilidad: true, plazoEnvio: 3,
+                infoNutricional: "Por 100g: Calorías 387, Carbohidratos 100g, Azúcares 100g."
+            },
+            {
+                id: 2, categoria: "legumbres", imagen: "img/product/lenteja-1kg.png", nombre: "Lenteja", peso: 1000, precio: "$2.30",
+                descripcionBreve: "Lentejas de calidad premium, una fuente esencial de proteínas vegetales y fibra para una alimentación saludable.",
+                descripcionDetallada: "Las lentejas son legumbres versátiles, conocidas por su alto contenido de proteínas y fibra. Son perfectas para preparar sopas, guisos y ensaladas. Su cocción rápida y su textura suave las hacen ideales para una amplia variedad de recetas saludables.",
+                disponibilidad: true, plazoEnvio: 4,
+                infoNutricional: "Por 100g: Calorías 116, Proteínas 9g, Carbohidratos 20g, Fibra 8g."
+            },
+            {
+                id: 3, categoria: "legumbres", imagen: "img/product/frijol-colorado-1kg.png", nombre: "Frijol Colorado", peso: 1000, precio: "$2.00",
+                descripcionBreve: "Frijol colorado nutritivo, ideal para preparar platos tradicionales con un sabor auténtico.",
+                descripcionDetallada: "El frijol colorado es una legumbre rica en proteínas, fibra y antioxidantes. Se utiliza en sopas, potajes y ensaladas, aportando sabor y nutrición. Es una opción excelente para dietas balanceadas y recetas tradicionales de la cocina cubana y latinoamericana.",
+                disponibilidad: false, plazoEnvio: 7,
+                infoNutricional: "Por 100g: Calorías 140, Proteínas 9g, Carbohidratos 27g, Fibra 15g."
+            },
+            {
+                id: 4, categoria: "legumbres", imagen: "img/product/frijol-negro-1kg.png", nombre: "Frijol Negro", peso: 1000, precio: "$2.20",
+                descripcionBreve: "Frijol negro de calidad superior, perfecto para acompañamientos y platos tradicionales.",
+                descripcionDetallada: "El frijol negro es un alimento básico en muchas cocinas. Su sabor intenso y textura cremosa lo convierten en un ingrediente esencial para sopas, guisos y acompañamientos. Además, es una fuente excelente de fibra, proteínas y antioxidantes naturales.",
+                disponibilidad: true, plazoEnvio: 5,
+                infoNutricional: "Por 100g: Calorías 132, Proteínas 8g, Carbohidratos 23g, Fibra 9g."
+            },
+            {
+                id: 5, categoria: "legumbres", imagen: "img/product/frijol-bayo-1kg.jpg", nombre: "Frijol Bayo", peso: 1000, precio: "$2.50",
+                descripcionBreve: "Frijol bayo para guisos sabrosos y nutritivos.",
+                descripcionDetallada: "El frijol bayo tiene un sabor suave y una textura rica, ideal para preparar guisos, cocidos y platos caseros tradicionales. Es una fuente importante de proteínas vegetales y fibra, contribuyendo a una dieta balanceada.",
+                disponibilidad: true, plazoEnvio: 3,
+                infoNutricional: "Por 100g: Calorías 142, Proteínas 9g, Carbohidratos 26g, Fibra 12g."
+            },
+            {
+                id: 6, categoria: "legumbres", imagen: "img/product/garbanzo-1kg.png", nombre: "Garbanzo", peso: 1000, precio: "$2.00",
+                descripcionBreve: "Garbanzo de textura cremosa y sabor versátil, ideal para múltiples preparaciones culinarias.",
+                descripcionDetallada: "El garbanzo es una legumbre rica en nutrientes que se utiliza ampliamente en la cocina mediterránea y de Medio Oriente. Es perfecto para preparar hummus, ensaladas, guisos y sopas. Su alto contenido de fibra y proteínas vegetales lo convierten en una opción saludable y deliciosa.",
+                disponibilidad: false, plazoEnvio: 6,
+                infoNutricional: "Por 100g: Calorías 164, Proteínas 9g, Carbohidratos 27g, Fibra 8g."
+            },
+            {
+                id: 7, categoria: "arroz", imagen: "img/product/arroz-1kg.jpg", nombre: "Arroz", peso: 1000, precio: "$1.80",
+                descripcionBreve: "Arroz de grano largo para una cocción esponjosa y ligera.",
+                descripcionDetallada: "El arroz de grano largo es un acompañamiento versátil que combina perfectamente con una amplia variedad de platos. Su cocción es fácil, y es ideal para preparar arroces sueltos y esponjosos. Rico en carbohidratos, aporta energía y es una opción fundamental en cualquier cocina.",
+                disponibilidad: true, plazoEnvio: 2,
+                infoNutricional: "Por 100g: Calorías 130, Carbohidratos 28g, Proteínas 2.4g."
+            },
+            {
+                id: 8, categoria: "cafe", imagen: "img/product/cafe-gloria-500gr.jpg", nombre: "Café Gloria", peso: 500, precio: "$1.00",
+                descripcionBreve: "Café molido de aroma intenso y sabor robusto.",
+                descripcionDetallada: "El café Gloria es un café molido con un sabor robusto y un aroma envolvente. Es perfecto para disfrutar de una taza intensa, ideal para comenzar el día con energía o compartir momentos especiales. Apto para diferentes métodos de preparación, como cafetera y filtro.",
+                disponibilidad: true, plazoEnvio: 3,
+                infoNutricional: "Por 100g: Calorías 2, Proteínas 0.1g, Carbohidratos 0g."
+            },
+            {
+                id: 9, categoria: "cafe", imagen: "img/product/cafe-gloria-250gr.jpg", nombre: "Café Gloria", peso: 250, precio: "$0.80",
+                descripcionBreve: "Café Gloria en un práctico formato de 250g.",
+                descripcionDetallada: "El café Gloria en presentación de 250g es ideal para disfrutar del aroma y sabor auténtico del café molido, en una porción conveniente para el hogar o la oficina. Su equilibrio perfecto entre cuerpo y acidez garantiza una experiencia de café deliciosa.",
+                disponibilidad: true, plazoEnvio: 2,
+                infoNutricional: "Por 100g: Calorías 2, Proteínas 0.1g, Carbohidratos 0g."
+            },
+            {
+                id: 10, categoria: "cafe", imagen: "img/product/cafe-con-leche-1kg.jpg", nombre: "Café con Leche", peso: 1000, precio: "$3.00",
+                descripcionBreve: "Café con leche en una mezcla lista para disfrutar.",
+                descripcionDetallada: "Esta mezcla de café con leche ofrece una bebida suave y equilibrada, perfecta para disfrutar en cualquier momento del día. Su preparación es rápida y sencilla, brindando una experiencia reconfortante y deliciosa.",
+                disponibilidad: true, plazoEnvio: 4,
+                infoNutricional: "Por 100g: Calorías 50, Proteínas 2g, Carbohidratos 10g."
+            }
         ];
 
         function generarProductos(productos) {

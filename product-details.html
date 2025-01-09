@@ -9,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sisarga Par Group | Cuba</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
@@ -33,7 +36,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="img/logo.webp" alt="" class='sisarga-logo'></a>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
@@ -51,7 +54,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="img/logo.webp" alt="" class='sisarga-logo'></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -77,10 +80,9 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
-                            <img class="product__details__pic__item--large"
-                                src="img/product/details/product-details-1.jpg" alt="">
+                            <img class="product__details__pic__item--large" src="" alt="" id="imagenProducto">
                         </div>
-                        <div class="product__details__pic__slider owl-carousel">
+                        <!-- <div class="product__details__pic__slider owl-carousel">
                             <img data-imgbigurl="img/product/details/product-details-2.jpg"
                                 src="img/product/details/thumb-1.jpg" alt="">
                             <img data-imgbigurl="img/product/details/product-details-3.jpg"
@@ -89,20 +91,18 @@
                                 src="img/product/details/thumb-3.jpg" alt="">
                             <img data-imgbigurl="img/product/details/product-details-4.jpg"
                                 src="img/product/details/thumb-4.jpg" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="product__details__text">
-                        <h3>Vetgetable’s Package</h3>
-                        <div class="product__details__price">$50.00</div>
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
-                            vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
-                            quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
+                        <h3 id="nombreProducto">-</h3>
+                        <div class="product__details__price" id="precioProducto">$-</div>
+                        <p id="descripcionBreveProducto">-</p>
                         <ul>
-                            <li><b>Availability</b> <span>In Stock</span></li>
-                            <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
-                            <li><b>Weight</b> <span>0.5 kg</span></li>
+                            <li><b>Disponibilidad</b> <span id="disponibilidadProducto">-</span></li>
+                            <li><b>Envio</b> <span id="plazoEnvioProducto">-</span></li>
+                            <li><b>Peso</b> <span id="pesoProducto">-</span></li>
                         </ul>
                     </div>
                 </div>
@@ -111,76 +111,24 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
-                                    aria-selected="true">Description</a>
+                                    aria-selected="true">Descripción</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
-                                    aria-selected="false">Information</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
-                                    aria-selected="false">Reviews <span>(1)</span></a>
+                                    aria-selected="false">Información Nutricional</a>
                             </li>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__tab__desc">
-                                    <h6>Products Infomation</h6>
-                                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                        Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus
-                                        suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam
-                                        vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.
-                                        Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat,
-                                        accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
-                                        pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula
-                                        elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus
-                                        et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
-                                        vel, ullamcorper sit amet ligula. Proin eget tortor risus.</p>
-                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet
-                                        elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
-                                        porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
-                                        nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed
-                                        porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum
-                                        sed sit amet dui. Proin eget tortor risus.</p>
+                                    <h6>Descripción del producto</h6>
+                                    <p id="descripcionDetalladaProducto"></p>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <div class="product__details__tab__desc">
-                                    <h6>Products Infomation</h6>
-                                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                        Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
-                                        Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
-                                        sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo
-                                        eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.
-                                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
-                                        sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac
-                                        diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante
-                                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                        Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                                        Proin eget tortor risus.</p>
-                                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet
-                                        elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
-                                        porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
-                                        nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                <div class="product__details__tab__desc">
-                                    <h6>Products Infomation</h6>
-                                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                        Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
-                                        Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
-                                        sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo
-                                        eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.
-                                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
-                                        sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac
-                                        diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante
-                                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                        Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                                        Proin eget tortor risus.</p>
+                                    <h6>Información nutricional del producto</h6>
+                                    <p id="informacionNutricionalProducto"></p>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +140,7 @@
     <!-- Product Details Section End -->
 
     <!-- Related Product Section Begin -->
-    <section class="related-product">
+    <!-- <section class="related-product">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -264,7 +212,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Related Product Section End -->
 
     <!-- Footer Section Begin -->
@@ -274,7 +222,7 @@
                 <div class="col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.html"><img src="img/logo.webp" alt="" class='sisarga-logo'></a>
                         </div>
                         <!-- <ul>
                             <li>Address: 60-49 Road 11378 New York</li>
@@ -299,7 +247,9 @@
                 <div class="col-lg-12">
                     <div class="footer__copyright">
                         <div class="footer__copyright__text">
-                            <p> Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+                            <p> Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -317,6 +267,107 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const productos = [
+            {
+                id: 1, categoria: "azucar", imagen: "img/product/azucar-blanco-1kg.jpg", nombre: "Azúcar Blanco", peso: 1000, precio: "$3.00",
+                descripcionBreve: "Azúcar refinado de alta pureza, ideal para endulzar todo tipo de alimentos y bebidas con un sabor dulce clásico.",
+                descripcionDetallada: "El azúcar blanco refinado es un producto de calidad superior utilizado comúnmente en la repostería y cocina. Su textura fina permite una disolución rápida en líquidos calientes y fríos. Perfecto para endulzar café, té, jugos, y preparar postres como pasteles, galletas, y confituras.",
+                disponibilidad: true, plazoEnvio: 3,
+                infoNutricional: "Por 100g: Calorías 387, Carbohidratos 100g, Azúcares 100g."
+            },
+            {
+                id: 2, categoria: "legumbres", imagen: "img/product/lenteja-1kg.png", nombre: "Lenteja", peso: 1000, precio: "$2.30",
+                descripcionBreve: "Lentejas de calidad premium, una fuente esencial de proteínas vegetales y fibra para una alimentación saludable.",
+                descripcionDetallada: "Las lentejas son legumbres versátiles, conocidas por su alto contenido de proteínas y fibra. Son perfectas para preparar sopas, guisos y ensaladas. Su cocción rápida y su textura suave las hacen ideales para una amplia variedad de recetas saludables.",
+                disponibilidad: true, plazoEnvio: 4,
+                infoNutricional: "Por 100g: Calorías 116, Proteínas 9g, Carbohidratos 20g, Fibra 8g."
+            },
+            {
+                id: 3, categoria: "legumbres", imagen: "img/product/frijol-colorado-1kg.png", nombre: "Frijol Colorado", peso: 1000, precio: "$2.00",
+                descripcionBreve: "Frijol colorado nutritivo, ideal para preparar platos tradicionales con un sabor auténtico.",
+                descripcionDetallada: "El frijol colorado es una legumbre rica en proteínas, fibra y antioxidantes. Se utiliza en sopas, potajes y ensaladas, aportando sabor y nutrición. Es una opción excelente para dietas balanceadas y recetas tradicionales de la cocina cubana y latinoamericana.",
+                disponibilidad: false, plazoEnvio: 7,
+                infoNutricional: "Por 100g: Calorías 140, Proteínas 9g, Carbohidratos 27g, Fibra 15g."
+            },
+            {
+                id: 4, categoria: "legumbres", imagen: "img/product/frijol-negro-1kg.png", nombre: "Frijol Negro", peso: 1000, precio: "$2.20",
+                descripcionBreve: "Frijol negro de calidad superior, perfecto para acompañamientos y platos tradicionales.",
+                descripcionDetallada: "El frijol negro es un alimento básico en muchas cocinas. Su sabor intenso y textura cremosa lo convierten en un ingrediente esencial para sopas, guisos y acompañamientos. Además, es una fuente excelente de fibra, proteínas y antioxidantes naturales.",
+                disponibilidad: true, plazoEnvio: 5,
+                infoNutricional: "Por 100g: Calorías 132, Proteínas 8g, Carbohidratos 23g, Fibra 9g."
+            },
+            {
+                id: 5, categoria: "legumbres", imagen: "img/product/frijol-bayo-1kg.png", nombre: "Frijol Bayo", peso: 1000, precio: "$2.50",
+                descripcionBreve: "Frijol bayo para guisos sabrosos y nutritivos.",
+                descripcionDetallada: "El frijol bayo tiene un sabor suave y una textura rica, ideal para preparar guisos, cocidos y platos caseros tradicionales. Es una fuente importante de proteínas vegetales y fibra, contribuyendo a una dieta balanceada.",
+                disponibilidad: true, plazoEnvio: 3,
+                infoNutricional: "Por 100g: Calorías 142, Proteínas 9g, Carbohidratos 26g, Fibra 12g."
+            },
+            {
+                id: 6, categoria: "legumbres", imagen: "img/product/garbanzo-1kg.png", nombre: "Garbanzo", peso: 1000, precio: "$2.00",
+                descripcionBreve: "Garbanzo de textura cremosa y sabor versátil, ideal para múltiples preparaciones culinarias.",
+                descripcionDetallada: "El garbanzo es una legumbre rica en nutrientes que se utiliza ampliamente en la cocina mediterránea y de Medio Oriente. Es perfecto para preparar hummus, ensaladas, guisos y sopas. Su alto contenido de fibra y proteínas vegetales lo convierten en una opción saludable y deliciosa.",
+                disponibilidad: false, plazoEnvio: 6,
+                infoNutricional: "Por 100g: Calorías 164, Proteínas 9g, Carbohidratos 27g, Fibra 8g."
+            },
+            {
+                id: 7, categoria: "arroz", imagen: "img/product/arroz-1kg.png", nombre: "Arroz", peso: 1000, precio: "$1.80",
+                descripcionBreve: "Arroz de grano largo para una cocción esponjosa y ligera.",
+                descripcionDetallada: "El arroz de grano largo es un acompañamiento versátil que combina perfectamente con una amplia variedad de platos. Su cocción es fácil, y es ideal para preparar arroces sueltos y esponjosos. Rico en carbohidratos, aporta energía y es una opción fundamental en cualquier cocina.",
+                disponibilidad: true, plazoEnvio: 2,
+                infoNutricional: "Por 100g: Calorías 130, Carbohidratos 28g, Proteínas 2.4g."
+            },
+            {
+                id: 8, categoria: "cafe", imagen: "img/product/cafe-gloria-500gr.png", nombre: "Café Gloria", peso: 500, precio: "$1.00",
+                descripcionBreve: "Café molido de aroma intenso y sabor robusto.",
+                descripcionDetallada: "El café Gloria es un café molido con un sabor robusto y un aroma envolvente. Es perfecto para disfrutar de una taza intensa, ideal para comenzar el día con energía o compartir momentos especiales. Apto para diferentes métodos de preparación, como cafetera y filtro.",
+                disponibilidad: true, plazoEnvio: 3,
+                infoNutricional: "Por 100g: Calorías 2, Proteínas 0.1g, Carbohidratos 0g."
+            },
+            {
+                id: 9, categoria: "cafe", imagen: "img/product/cafe-gloria-250gr.png", nombre: "Café Gloria", peso: 250, precio: "$0.80",
+                descripcionBreve: "Café Gloria en un práctico formato de 250g.",
+                descripcionDetallada: "El café Gloria en presentación de 250g es ideal para disfrutar del aroma y sabor auténtico del café molido, en una porción conveniente para el hogar o la oficina. Su equilibrio perfecto entre cuerpo y acidez garantiza una experiencia de café deliciosa.",
+                disponibilidad: true, plazoEnvio: 2,
+                infoNutricional: "Por 100g: Calorías 2, Proteínas 0.1g, Carbohidratos 0g."
+            },
+            {
+                id: 10, categoria: "cafe", imagen: "img/product/cafe-con-leche-1kg.png", nombre: "Café con Leche", peso: 1000, precio: "$3.00",
+                descripcionBreve: "Café con leche en una mezcla lista para disfrutar.",
+                descripcionDetallada: "Esta mezcla de café con leche ofrece una bebida suave y equilibrada, perfecta para disfrutar en cualquier momento del día. Su preparación es rápida y sencilla, brindando una experiencia reconfortante y deliciosa.",
+                disponibilidad: true, plazoEnvio: 4,
+                infoNutricional: "Por 100g: Calorías 50, Proteínas 2g, Carbohidratos 10g."
+            }
+        ];
+
+
+        function obtenerParametroURL(nombre) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(nombre);
+        }
+
+        function mostrarDetalleProducto() {
+            const idProducto = obtenerParametroURL('id');
+            const producto = productos.find(p => p.id === parseInt(idProducto));
+
+            if (producto) {
+                document.getElementById('nombreProducto').textContent = producto.nombre;
+                document.getElementById('imagenProducto').src = producto.imagen;
+                document.getElementById('precioProducto').textContent = producto.precio;
+                document.getElementById('pesoProducto').textContent = producto.peso >= 1000 ? `${producto.peso / 1000} kg` : `${producto.peso} gr`;
+                document.getElementById('descripcionBreveProducto').textContent = producto.descripcionBreve;
+                document.getElementById('descripcionDetalladaProducto').textContent = producto.descripcionDetallada;
+                document.getElementById('informacionNutricionalProducto').textContent = producto.infoNutricional;
+            } else {
+                document.getElementById('detalleProducto').innerHTML = '<p>Producto no encontrado.</p>';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', mostrarDetalleProducto);
+
+    </script>
 
 
 </body>

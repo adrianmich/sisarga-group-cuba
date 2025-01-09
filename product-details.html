@@ -357,6 +357,8 @@
                 document.getElementById('imagenProducto').src = producto.imagen;
                 document.getElementById('precioProducto').textContent = producto.precio;
                 document.getElementById('pesoProducto').textContent = producto.peso >= 1000 ? `${producto.peso / 1000} kg` : `${producto.peso} gr`;
+                document.getElementById('disponibilidadProducto').textContent = producto.disponibilidad ? 'Disponible' : 'No disponible';
+                document.getElementById('plazoEnvioProducto').textContent = producto.plazoEnvio >= 1 ? `Envió en ${producto.plazoEnvio} días` : 'Envío inmediato';
                 document.getElementById('descripcionBreveProducto').textContent = producto.descripcionBreve;
                 document.getElementById('descripcionDetalladaProducto').textContent = producto.descripcionDetallada;
                 document.getElementById('informacionNutricionalProducto').textContent = producto.infoNutricional;
